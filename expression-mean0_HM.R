@@ -155,7 +155,7 @@ Genes.signif <- rownames(mean.mf)[mean.mf$signif == TRUE]
 
 ### End Controls ###
 
-#Clustering
+#Clustering on the g1k database
 #The dist function calculates distances between rows of a matrix. I'm using Euclidean distance here since the data is log tranformed.
 g1k.mf.m <- data.matrix(g1k.mf[ ,-(1:2)])
 g1k.dist.sam <- dist(g1k.mf.m)
