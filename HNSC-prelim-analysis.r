@@ -13,7 +13,6 @@ gender1 <- subset(ClinicalData, select = c(Patient_Id, gender))
 load("~/Documents/SIB-internship/Data/HNSC/20151101-HNSC-RNASeq2GeneNorm.Rdata")
 RNASeq2Gene_g <- merge(gender1, RNASeq2GeneNorm, by="Patient_Id")
 
-
 #Save colnames as x+Entrez_id IF NECESSARY
 #colnames(RNASeq2GeneNorm)[-(1:2)] = paste("x", colnames(RNASeq2GeneNorm)[-(1:2)], sep="")
 #colnames(RNASeq2Gene_g)[-(1:3)] = paste("x", colnames(RNASeq2Gene_g)[-(1:3)], sep="")
