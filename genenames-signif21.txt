@@ -1,0 +1,18 @@
+Approved.Symbol & Approved.Name & Previous.Symbols & Chromosome & Entrez.Gene.ID
+DDX3Y & DEAD-box helicase 3, Y-linked & DBY & Yq11 & X8653
+EIF1AY & eukaryotic translation initiation factor 1A, Y-linked & NA & Yq11.223 & X9086
+KDM5C & lysine demethylase 5C & SMCX, JARID1C, MRX13 & Xp11.22-p11.21 & X8242
+KDM5D & lysine demethylase 5D & HYA, HY, SMCY, JARID1D & Yq11 & X8284
+NLGN4Y & neuroligin 4, Y-linked & NA & Yq11.221 & X22829
+PRKY & protein kinase, Y-linked, pseudogene & NA & Yp11.2 & X5616
+RPS4Y1 & ribosomal protein S4, Y-linked 1 & RPS4Y & Yp11.3 & X6192
+SRY & sex determining region Y & NA & Yp11.3 & X6736
+SYAP1 & synapse associated protein 1 & NA & Xp22.31 & X94056
+TMSB4Y & thymosin beta 4, Y-linked & NA & Yq11.221 & X9087
+TSIX & TSIX transcript, XIST antisense RNA & NA & Xq13.2 & X9383
+TTTY14 & testis-specific transcript, Y-linked 14 (non-protein coding) & NCRNA00185, CYorf14 & Yq11.222 & X83869
+TTTY15 & testis-specific transcript, Y-linked 15 (non-protein coding) & NA & Yq11.1 & X64595
+USP9Y & ubiquitin specific peptidase 9, Y-linked & NA & Yq11.2 & X8287
+UTY & ubiquitously transcribed tetratricopeptide repeat containing, Y-linked & NA & Yq11.221 & X7404
+XIST & X inactive specific transcript (non-protein coding) & DXS399E & Xq13.2 & X7503
+ZFY & zinc finger protein, Y-linked & NA & Yp11.3 & X7544

@@ -1,0 +1,18 @@
+Approved.Symbol & Approved.Name & Chromosome
+DDX3Y & DEAD-box helicase 3, Y-linked & Yq11
+EIF1AY & eukaryotic translation initiation factor 1A, Y-linked & Yq11.223
+KDM5C & lysine demethylase 5C & Xp11.22-p11.21
+KDM5D & lysine demethylase 5D & Yq11
+NLGN4Y & neuroligin 4, Y-linked & Yq11.221
+PRKY & protein kinase, Y-linked, pseudogene & Yp11.2
+RPS4Y1 & ribosomal protein S4, Y-linked 1 & Yp11.3
+SRY & sex determining region Y & Yp11.3
+SYAP1 & synapse associated protein 1 & Xp22.31
+TMSB4Y & thymosin beta 4, Y-linked & Yq11.221
+TSIX & TSIX transcript, XIST antisense RNA & Xq13.2
+TTTY14 & testis-specific transcript, Y-linked 14 (non-protein coding) & Yq11.222
+TTTY15 & testis-specific transcript, Y-linked 15 (non-protein coding) & Yq11.1
+USP9Y & ubiquitin specific peptidase 9, Y-linked & Yq11.2
+UTY & ubiquitously transcribed tetratricopeptide repeat containing, Y-linked & Yq11.221
+XIST & X inactive specific transcript (non-protein coding) & Xq13.2
+ZFY & zinc finger protein, Y-linked & Yp11.3
