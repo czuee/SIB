@@ -324,15 +324,27 @@ signif_genes.tn <- merge(signif_gene_names, GeneId, by = "Entrez_Gene_Id", all.x
 colnames(signif_genes.tn) = c("Entrez.Gene.Id" , "Approved.Symbol")
 genenames.tn <- merge(signif_genes.tn, gene.names, by = "Approved.Symbol")
 
+#Search if Approved symbol is a previous symbol in the gene descriptions list.
+prev_symb <- gene.names[unique(grep(paste(signif_genes.tn$Approved.Symbol, collapse="|"), gene.names$Previous.Symbols)), ]
+#No other genes were identified
+
+
 #Only 9 genes extracted since X55410 or NCRNA00185 is the same as X83869(TTTY14).
-write.table(genenames.tn, file = "Tumor-Normal_diff_geneexp_MvsF.txt", sep = "\t")
+write.table(genenames.tn, file = "Tumor-Normal_ttest_q01.txt", sep = "\t", quote = FALSE, row.names = FALSE)
 
 signif_genes = cbind(diff.tn[ ,1:2], signif_genes)
 dat.m = tidyr::gather(signif_genes, "genes", "exprn", 3:12)
 #dat.m <- melt(signif_gene_expr.tn, id.vars = gender, measure.vars = colnames(signif_gene_expr.tn)[-(1:2)])
 ggplot(dat.m) + geom_boxplot(aes(x=genes, y=exprn, col = gender)) + ggtitle("(Tumor - normal) in M vs F") + ylab("gene expression") + coord_flip()
 
-signif_genes = diff.tn[ , (which(qval < 0.2) + 2)]
+signif_genes_02 = diff.tn[ , (which(qval < 0.2) + 2)]
+signif_gene_names02 = data.frame(colnames(signif_genes_02))
+colnames(signif_gene_names02)[1] = "Entrez_Gene_Id"
+signif_genes02.tn <- merge(signif_gene_names02, GeneId, by = "Entrez_Gene_Id", all.x = TRUE) ### Signif gene names
+colnames(signif_genes02.tn) = c("Entrez.Gene.Id" , "Approved.Symbol")
+genenames02.tn <- merge(signif_genes02.tn, gene.names, by = "Approved.Symbol")
+
+write.table(genenames02.tn, file = "Tumor-Normal_ttest_q02.txt", sep = "\t", quote = FALSE, row.names = FALSE)
 
 ### Wilcoxon test #####
 wilcox.test(diff.tn[  , 523] ~  diff.tn[ , 2])
@@ -368,8 +380,17 @@ which(Pval.W < 0.001)
 # 382     521     835     836    1176    1520    1886    1988    2223    2256    2400    2577    4470    5105    5484 
 #X114907   X1869 X474344   X4171  X54741  X57010    X993  X54414 
 #   6780    7215    7223    7435    8274    8435    9035    9658 
+
 signif_genesW = diff.tn[ , (which(Pval.W < 0.001) + 2)]
 signif_genesW = cbind(diff.tn[ ,1:2], signif_genesW)
 dat.w = tidyr::gather(signif_genesW, "genes", "exprn", 3:25)
 #dat.m <- melt(signif_gene_expr.tn, id.vars = gender, measure.vars = colnames(signif_gene_expr.tn)[-(1:2)])
 ggplot(dat.w) + geom_boxplot(aes(x=genes, y=exprn, col = gender)) + ggtitle("(Tumor - normal) in M vs F Wilcoxon") + ylab("gene expression") + coord_flip()
+
+signif_gene_namesW = data.frame(colnames(signif_genesW[ , -(1:2)]))
+colnames(signif_gene_namesW)[1] = "Entrez_Gene_Id"
+signif_genesW.tn <- merge(signif_gene_namesW, GeneId, by = "Entrez_Gene_Id", all.x = TRUE) ### Signif gene names
+colnames(signif_genesW.tn) = c("Entrez.Gene.Id" , "Approved.Symbol")
+genenamesW.tn <- merge(signif_genesW.tn, gene.names, by = "Approved.Symbol")
+
+write.table(genenamesW.tn, file = "Tumor-Normal_Wilcoxin.txt", sep = "\t", quote = FALSE, row.names = FALSE)

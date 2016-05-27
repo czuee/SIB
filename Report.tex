@@ -72,11 +72,11 @@ The gene expression data for HNSC was taken from the Cancer genome atlas study \
 \label{mutsig}
 \end{figure}
 
-\section{Difference in gene expression between tumor samples from males vs females. }
+\section{Gene expression in tumors}
 
 \subsection{Selecting genes with highest variability}
 
-The genes were filtered to select only genes that would have the highest variance in their gene expression and are more likely to have differential expression between males and females. The genes were sorted by the standard deviation (SD) of gene expression from all samples. The figure~\ref{sd-plot} shows the plot with ordered
+The genes were filtered to select only genes that would have the highest variance in their gene expression and are more likely to have differential expression between males and females. The genes were sorted by the standard deviation (SD) of gene expression over all samples (figure~\ref{sd-plot}). The top 2,000 genes were used for further analysis.
 
 \begin{figure}[htbp]
 \centering
@@ -87,16 +87,19 @@ The genes were filtered to select only genes that would have the highest varianc
 
 \subsection{Genes with significant difference in means between males and females}
 
-\begin{figure}[htbp]
+in ordert o find the genes that are different in males and females, the mean of the distrubution in the two sexes were compared. There were 21 genes which had a significant difference in their means  (figure~\ref{diff-mean}).
+
+\begin{figure}[htb]
 \centering
-\includegraphics[width=0.5\textwidth]{Plots/Signif21_genenames_boxplot.png}
-\caption{The genes that have a difference between their means in males and females greater than the SD of the entire distribution were selected. 21 genes were found.}
+\includegraphics[width=0.6\textwidth]{Plots/Signif21_genenames_boxplot.png}
+\caption{The genes that have a difference between their means in males and females greater than the SD of the entire distribution were selected. This analysis resulted in 21 genes.}
 \label{diff-mean}
 \end{figure}
 
-\begin{table}[htbp]
+\begin{table}[htb]
+\small
    \centering
-   \caption{The genes that have a difference between their means in males and females greater than the SD of the entire distribution were selected. 19 descriptions - NCRNA00185 and TTTY14 are the same gene. Also CYorf15A and B have the same description. All the genes are X and Y linked only.} % requires the topcapt package
+   \caption{The genes that have a difference between their means in males and females greater than the SD of the entire distribution were selected. 19 descriptions - NCRNA00185 and TTTY14 are the same gene. Also CYorf15A and B have the same description (TXLNGY). All the genes are X and Y linked only.} % requires the topcapt package
    \begin{tabular}{p{1.5cm} p{10cm} p{2.5cm}} % Column formatting, @{} suppresses leading/trailing space
    \toprule
 Approved Symbol & Approved Name & Chromosome \\
@@ -118,13 +121,54 @@ USP9Y & ubiquitin specific peptidase 9, Y-linked & Yq11.2 \\
 UTY & ubiquitously transcribed tetratricopeptide repeat containing, Y-linked & Yq11.221 \\
 XIST & X inactive specific transcript (non-protein coding) & Xq13.2 \\
 ZFY & zinc finger protein, Y-linked & Yp11.3 \\
-
+BCORP1 & BCL6 corepressor pseudogene 1 & Yq11.222 \\
+TXLNGY & taxilin gamma pseudogene, Y-linked & Yq11.222 \\
 \bottomrule
    \end{tabular}
-   \label{tab:itc}
+   \label{signif1}
 \end{table}
 
+Table~\ref{signif1} lists the description and location of these genes. All the genes identified were X or Y linked genes, which obviously have differential expression in males and females. Hence, in the next step, I considered the gene expression difference between tumor and normal samples from the same individual to avoid identifying obvious differences between males and females.
+
+\section{Gene expression difference in tumor minus normal}
+
+Out of the 566 samples, only few samples had tumor and normal tissue data from the same patient and were extracted. The tumor and normal tissue data was present for 14 females and 29 males. In this part, the number fo genes to be considered for analysis was identified as 10,000 genes with highest variance on the basis of a QQ-plot of the SD values.
+
+The data was processed so that the $(tumor - normal)$ values were calculated for each patient. This gave a data frame of (T-N) values for 10,000 gene columns and patient rows. 
+
+\begin{figure}[htbp]
+\centering
+\subfloat[t-test]{\includegraphics[width=0.4\textwidth]{Plots/Tum-Norm_diff_MvsF_q01.png}}
+\subfloat[Wilcoxon test]{\includegraphics[width=0.6\textwidth]{Plots/MvsF_T-N_Wilcox23.png}}
+\caption{Significant genes identified through statistical tests (a) t-test with q-value $<$ 0.1 and (b) Wilcoxin test with P-value $<$ 0.001.}
+\label{signif-test}
+\end{figure}
+
+The t-test statistic was calculated as a function of gender for each gene. The p-values calculated for each gene were adjusted using the q-value package and p.adjust packages. The Wilcoxon test was also performed and the p-values were used to identify the significant genes. The q-values did not give any significant genes eevn at q $<$ 0.1 with this test. The different methods picked up similar genes. Figure~\ref{signif-test} shows the genes identified through the t-test and Wilcoxin test. The significant genes identified through the t-test are listed in table~\ref{signif2}.
+
+\begin{table}[htb]
+\small
+   \centering
+   \caption{Significant genes identified through the t-test with q-value $<$ 0.1. The Y-linked genes can be considered as false positives.} % requires the topcapt package
+   \begin{tabular}{p{1.5cm} p{10cm} p{2.5cm}} % Column formatting, @{} suppresses leading/trailing space
+   \toprule
+Approved Symbol & Approved Name & Chromosome \\
+\midrule
+ATP8B4 & ATPase phospholipid transporting 8B4 (putative) & 15q21.2 \\
+CDC25A & cell division cycle 25A & 3p21 \\
+KLHDC1 & kelch domain containing 1 & 14q21.3 \\
+MCM2 & minichromosome maintenance complex component 2 & 3q21 \\
+PADI2 & peptidyl arginine deiminase 2 & 1p35.2-p35.1 \\
+SIAE & sialic acid acetylesterase & 11q24 \\
+TBL1Y & transducin (beta)-like 1, Y-linked & Yp11.2 \\
+TMSB4Y & thymosin beta 4, Y-linked & Yq11.221 \\
+TTTY14 & testis-specific transcript, Y-linked 14 (non-protein coding) & Yq11.222 \\
+\bottomrule
+   \end{tabular}
+   \label{signif2}
+\end{table}
 \begin{thebibliography}{9}
+
 
 \bibitem{nature} 
 Network, T. C. G. A. (2015)

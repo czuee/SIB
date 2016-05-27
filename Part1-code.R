@@ -249,8 +249,12 @@ colnames(genes.signif21) = c("Entrez.Gene.Id" , "Approved.Symbol")
 genenames.signif21 <- merge(genes.signif21, gene.names, by = "Approved.Symbol")
 genenames.signif21 <- genenames.signif21[ , -(2)]
 
+#Search if Approved symbol is a previous symbol in the gene descriptions list.
 prev_symb <- gene.names[unique(grep(paste(genes.signif21$Approved.Symbol, collapse="|"), gene.names$Previous.Symbols)), ]
 prev_symb <- rbind(prev_symb[1, ], prev_symb[7:8, ])
 genenames.signif21.all <- unique(rbind(genenames.signif21, prev_symb))
 nrow(genenames.signif21.all)
 #19 descriptions - NCRNA00185 and TTTY14 are the same gene. Also CYorf15A and B have the same description. ALl the genes are X and Y linked only.
+
+geneshort = genenames.signif21.all[ , c(1,2,4)]
+write.table(geneshort, file = "genenames-signif21-short.txt", sep = "\t", quote = FALSE, row.names = FALSE)

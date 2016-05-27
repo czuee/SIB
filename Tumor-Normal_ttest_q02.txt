@@ -1,0 +1,55 @@
+Approved.Symbol	Entrez.Gene.Id	Approved.Name	Previous.Symbols	Chromosome	Entrez.Gene.ID
+ABCA8	X10351	ATP binding cassette subfamily A member 8	NA	17q24	X10351
+ACSM5	X54988	acyl-CoA synthetase medium-chain family member 5	NA	16p12.3	X54988
+AKAP6	X9472	A-kinase anchoring protein 6	NA	14q12	X9472
+ATP8B4	X79895	ATPase phospholipid transporting 8B4 (putative)	NA	15q21.2	X79895
+C17orf53	X78995	chromosome 17 open reading frame 53	NA	17q21.31	X78995
+C17orf96	X100170841	chromosome 17 open reading frame 96	NA	17q12	X100170841
+C1orf105	X92346	chromosome 1 open reading frame 105	NA	1q24.3	X92346
+CABP4	X57010	calcium binding protein 4	NA	11q13.2	X57010
+CDC25A	X993	cell division cycle 25A	NA	3p21	X993
+CDH20	X28316	cadherin 20	NA	18q21.33	X28316
+CDT1	X81620	chromatin licensing and DNA replication factor 1	NA	16q24.3	X81620
+CLDN5	X7122	claudin 5	AWAL, TMVCF	22q11.21	X7122
+COL4A4	X1286	collagen type IV alpha 4	NA	2q35-q37	X1286
+CX3CR1	X1524	C-X3-C motif chemokine receptor 1	GPR13, CMKBRL1	3p21.3	X1524
+CXXC5	X51523	CXXC finger protein 5	NA	5q31.3	X51523
+E2F1	X1869	E2F transcription factor 1	RBBP3	20q11	X1869
+EIF1AY	X9086	eukaryotic translation initiation factor 1A, Y-linked	NA	Yq11.223	X9086
+EMX2OS	X196047	EMX2 opposite strand/antisense RNA	NA	10q26.11	X196047
+FBXO32	X114907	F-box protein 32	NA	8q24.13	X114907
+FOXO4	X4303	forkhead box O4	MLLT7	Xq13.1	X4303
+GIMAP7	X168537	GTPase, IMAP family member 7	NA	7q36.1	X168537
+GINS2	X51659	GINS complex subunit 2	NA	16q24.1	X51659
+GRK7	X131890	G protein-coupled receptor kinase 7	GPRK7	3q24	X131890
+HABP2	X3026	hyaluronan binding protein 2	NA	10q25.3	X3026
+HELLS	X3070	helicase, lymphoid-specific	NA	10q24.2	X3070
+HOXB13	X10481	homeobox B13	NA	17q21.32	X10481
+HOXD13	X3239	homeobox D13	HOX4I, SPD	2q31.1	X3239
+KIAA0408	X9729	KIAA0408	NA	6q22.33	X9729
+KLHDC1	X122773	kelch domain containing 1	NA	14q21.3	X122773
+LIMCH1	X22998	LIM and calponin homology domains 1	NA	4p13	X22998
+LIN28B	X389421	lin-28 homolog B	NA	6q21	X389421
+MAPT	X4137	microtubule associated protein tau	DDPAC, MAPTL	17q21	X4137
+MCM2	X4171	minichromosome maintenance complex component 2	CCNL1, CDCL1	3q21	X4171
+MCM7	X4176	minichromosome maintenance complex component 7	MCM2	7q21.3-q22.1	X4176
+MEF2C	X4208	myocyte enhancer factor 2C	NA	5q14.3	X4208
+PADI2	X11240	peptidyl arginine deiminase 2	NA	1p35.2-p35.1	X11240
+PALMD	X54873	palmdelphin	C1orf11	1p21.2	X54873
+PDK4	X5166	pyruvate dehydrogenase kinase 4	NA	7q21.3-q22.1	X5166
+PIK3R1	X5295	phosphoinositide-3-kinase regulatory subunit 1	NA	5q13.1	X5295
+PKNOX2	X63876	PBX/knotted 1 homeobox 2	NA	11q24.2	X63876
+PRODH	X5625	proline dehydrogenase (oxidase) 1	NA	22q11.2	X5625
+SIAE	X54414	sialic acid acetylesterase	YSG2	11q24	X54414
+SLC30A2	X7780	solute carrier family 30 member 2	ZNT2	1p35.3	X7780
+SLCO2B1	X11309	solute carrier organic anion transporter family member 2B1	SLC21A9	11q13	X11309
+SORBS1	X10580	sorbin and SH3 domain containing 1	SH3D5	10q23.33	X10580
+SYNPO2	X171024	synaptopodin 2	NA	4q26	X171024
+TBL1Y	X90665	transducin (beta)-like 1, Y-linked	NA	Yp11.2	X90665
+TLX3	X30012	T-cell leukemia homeobox 3	HOX11L2	5q35.1	X30012
+TMEM233	X387890	transmembrane protein 233	NA	12q24.23	X387890
+TMSB4Y	X9087	thymosin beta 4, Y-linked	NA	Yq11.221	X9087
+TTTY14	X83869	testis-specific transcript, Y-linked 14 (non-protein coding)	NCRNA00185, CYorf14	Yq11.222	X83869
+USP9Y	X8287	ubiquitin specific peptidase 9, Y-linked	NA	Yq11.2	X8287
+UTY	X7404	ubiquitously transcribed tetratricopeptide repeat containing, Y-linked	NA	Yq11.221	X7404
+ZNF596	X169270	zinc finger protein 596	NA	8p23.3	X169270

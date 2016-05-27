@@ -1,0 +1,10 @@
+Approved.Symbol	Entrez.Gene.Id	Approved.Name	Previous.Symbols	Chromosome	Entrez.Gene.ID
+ATP8B4	X79895	ATPase phospholipid transporting 8B4 (putative)	NA	15q21.2	X79895
+CDC25A	X993	cell division cycle 25A	NA	3p21	X993
+KLHDC1	X122773	kelch domain containing 1	NA	14q21.3	X122773
+MCM2	X4171	minichromosome maintenance complex component 2	CCNL1, CDCL1	3q21	X4171
+PADI2	X11240	peptidyl arginine deiminase 2	NA	1p35.2-p35.1	X11240
+SIAE	X54414	sialic acid acetylesterase	YSG2	11q24	X54414
+TBL1Y	X90665	transducin (beta)-like 1, Y-linked	NA	Yp11.2	X90665
+TMSB4Y	X9087	thymosin beta 4, Y-linked	NA	Yq11.221	X9087
+TTTY14	X83869	testis-specific transcript, Y-linked 14 (non-protein coding)	NCRNA00185, CYorf14	Yq11.222	X83869

@@ -1,0 +1,23 @@
+Approved.Symbol	Entrez.Gene.Id	Approved.Name	Previous.Symbols	Chromosome	Entrez.Gene.ID
+CABP4	X57010	calcium binding protein 4	NA	11q13.2	X57010
+CDC25A	X993	cell division cycle 25A	NA	3p21	X993
+CX3CR1	X1524	C-X3-C motif chemokine receptor 1	GPR13, CMKBRL1	3p21.3	X1524
+E2F1	X1869	E2F transcription factor 1	RBBP3	20q11	X1869
+FAM13C	X220965	family with sequence similarity 13 member C	FAM13C1	10q21	X220965
+FBXO32	X114907	F-box protein 32	NA	8q24.13	X114907
+GIMAP6	X474344	GTPase, IMAP family member 6	NA	7q36.1	X474344
+GIMAP7	X168537	GTPase, IMAP family member 7	NA	7q36.1	X168537
+GRK7	X131890	G protein-coupled receptor kinase 7	GPRK7	3q24	X131890
+HOXD13	X3239	homeobox D13	HOX4I, SPD	2q31.1	X3239
+KLHDC1	X122773	kelch domain containing 1	NA	14q21.3	X122773
+LEPROT	X54741	leptin receptor overlapping transcript	NA	1p31.2	X54741
+LIMCH1	X22998	LIM and calponin homology domains 1	NA	4p13	X22998
+MAPT	X4137	microtubule associated protein tau	DDPAC, MAPTL	17q21	X4137
+MCM2	X4171	minichromosome maintenance complex component 2	CCNL1, CDCL1	3q21	X4171
+PADI2	X11240	peptidyl arginine deiminase 2	NA	1p35.2-p35.1	X11240
+SIAE	X54414	sialic acid acetylesterase	YSG2	11q24	X54414
+SORBS1	X10580	sorbin and SH3 domain containing 1	SH3D5	10q23.33	X10580
+TBL1Y	X90665	transducin (beta)-like 1, Y-linked	NA	Yp11.2	X90665
+TMEM233	X387890	transmembrane protein 233	NA	12q24.23	X387890
+TTTY14	X83869	testis-specific transcript, Y-linked 14 (non-protein coding)	NCRNA00185, CYorf14	Yq11.222	X83869
+WISP3	X8838	WNT1 inducible signaling pathway protein 3	NA	6q21	X8838
